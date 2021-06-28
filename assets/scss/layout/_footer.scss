@@ -1,0 +1,11 @@
+.footer{
+    background-color: $eerie-black;
+    height: 200px;
+    .footer__container{
+        @include flex-container;
+        .footer__logo{
+        width: 100px;
+    }
+    }
+   
+}

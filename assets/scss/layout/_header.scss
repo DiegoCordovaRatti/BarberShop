@@ -1,0 +1,16 @@
+.header{
+    background-image: url(/assets/img/post-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    .header__container{
+        @include flex-container;
+        .header__title{
+            font-size: $xx-large;
+            color: $platinum;
+            font-style: italic;
+            font-weight: $black-weight;
+            text-align: center;
+        }
+    }
+}

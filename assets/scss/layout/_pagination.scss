@@ -1,0 +1,7 @@
+.pagination{
+    height: 150px;
+    background-color: $light-gray;
+    .pagination__container{
+        @include flex-container;
+    }
+}

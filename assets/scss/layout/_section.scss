@@ -1,0 +1,24 @@
+.section{
+    .section__container{
+        
+        .section__name{
+            font-weight: $black-weight;
+            font-style: italic;
+            font-size: $x-large;
+            color: $raisin-black;
+            text-align: center;
+        }
+        .section__user, .section__link{
+            font-weight: $regular-weight;
+            font-size: $large;
+            color: $spanish-pink;
+            text-align: center;
+        }
+        .section__summary{
+            font-weight: $light-weight;
+            font-size: $small;
+            line-height: 30px;
+        }
+
+    }
+}

@@ -1,0 +1,15 @@
+.article{
+    
+    .article__container{
+        .article__date{
+            font-weight: $regular-weight;
+            font-size: 25px ;
+        }
+        .article__paragraph{
+            line-height: 40px;
+            margin: 40px 0;
+            font-size: $medium;
+        }
+    }
+    
+}
