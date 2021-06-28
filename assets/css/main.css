@@ -10777,10 +10777,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .header {
-  background-image: url(/assets/img/post-image.jpg);
+  background-image: url("../img/post-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
+  height: 100vh;
 }
 .header .header__container {
   display: flex;
