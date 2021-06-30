@@ -2,24 +2,18 @@
     margin: 0 8vw;
     .article__container{
         .article__date{
-            font-weight: $regular-weight;
-            font-size: 25px ;
+            font-weight: $weight-regular;
+            font-size: $large ;
         }
         .article__paragraph{
             line-height: 45px;
             margin: 40px 0;
             font-size: $medium;
         }
-        .btn-sm{
-            border: solid $raisin-black thin;
-            border-radius: 20px;
-            padding: 10px 10px;
-            background-color: $nickel;
-            transition: 500ms ease;
-            text-decoration: none;
-            &:hover{
-                background-color: $raisin-black;
-            }
+        
+        .article__horizontal-rule{
+            color: $nickel;
+            height: 2px;
         }
     } 
 }

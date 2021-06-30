@@ -2,14 +2,14 @@
     .section__container{
         
         .section__name{
-            font-weight: $black-weight;
+            font-weight: $weight-black;
             font-style: italic;
             font-size: $x-large;
             color: $raisin-black;
             text-align: center;
         }
         .section__user, .section__link{
-            font-weight: $regular-weight;
+            font-weight: $weight-regular;
             font-size: $large;
             color: $spanish-pink;
             text-align: center;
@@ -19,10 +19,21 @@
             color: inherit;
         }
         .section__summary{
-            font-weight: $light-weight;
+            font-weight: $weight-light;
             font-size: $small;
             line-height: 30px;
         }
-
     }
 }
+ 
+@media screen and (min-width: 601px){
+    .section__img.section__img--resize{
+     height:142px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .section__img.section__img--resize{
+     height:131px;
+    }
+  }
