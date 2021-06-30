@@ -10842,20 +10842,20 @@ h1, .h1, h2, .h2, h3, .h3 {
   height: 2px;
 }
 
-.section .section__container .section__name {
+.section .section__container .section__author {
   font-weight: 900;
   font-style: italic;
   font-size: 30px;
   color: #222323;
   text-align: center;
 }
-.section .section__container .section__user, .section .section__container .section__link {
+.section .section__container .section__author--pink {
   font-weight: 400;
   font-size: 18px;
   color: #ecbcba;
   text-align: center;
 }
-.section .section__container .section__links {
+.section .section__container .section__link {
   text-decoration: none;
   color: inherit;
 }
@@ -10929,6 +10929,19 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .article .btn-sm:hover, .article .btn-group-sm > .btn:hover {
   background-color: #222323;
+}
+
+.modal .modal__icon {
+  color: #6c6e70;
+  transition: 300ms ease-in-out;
+}
+.modal .modal__icon.modal__icon--facebook:hover {
+  color: #0d6efd;
+  transform: scale(1.5);
+}
+.modal .modal__icon.modal__icon--linkedin:hover {
+  color: #0d6efd;
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,20 +1,20 @@
 .section{
     .section__container{
         
-        .section__name{
+        .section__author{
             font-weight: $weight-black;
             font-style: italic;
             font-size: $x-large;
             color: $raisin-black;
             text-align: center;
         }
-        .section__user, .section__link{
+        .section__author--pink{
             font-weight: $weight-regular;
             font-size: $large;
             color: $spanish-pink;
             text-align: center;
         }
-        .section__links{
+        .section__link{
             text-decoration: none;
             color: inherit;
         }
@@ -25,7 +25,7 @@
         }
     }
 }
- 
+//  makes the author's picture smaller or bigger depending on the device
 @media screen and (min-width: 601px){
     .section__img.section__img--resize{
      height:142px;

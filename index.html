@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Córdova Ratti">
     <meta name="description" content="BarberShop's Blog">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="blog, BarberShop, cuidar, cabello">
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- GoogleFonts -->
@@ -60,8 +60,10 @@
     <!------------------- HEADER ---------------------->
     <header class="header">
         <div class="header__container">
+            <!-- titulo con texto responsivo -->
             <h1 class="header__title header__title--resize col-sm-12 col-lg-5">5 formas de cuidar tu corte de cabello
             </h1>
+            <!-- icono flecha hacia abajo con smooth scroll -->
             <a href="#article"><i class="header__scroll fas fa-angle-double-down fa-4x"></i></a>
         </div>
     </header>
@@ -86,10 +88,12 @@
                 excepturi nulla iste quo
                 voluptatum dicta sequi nisi ab quis mollitia ea recusandae impedit eveniet eos rerum in id explicabo,
                 consequuntur, dolorum voluptas. Excepturi rerum dolorem repellat, dolores officiis laudantium!</p>
+            <!-- texto desaparece segun el tamaño -->
             <p class="article__paragraph d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Optio laudantium
                 maxime repellat rem incidunt
                 quam omnis modi voluptate pariatur illum.</p>
+            <!-- texto desaparece segun el tamaño -->
             <p class="article__paragraph d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Amet cupiditate
                 tenetur nemo omnis vero.
@@ -98,9 +102,31 @@
                 molestias sed. Voluptatibus ducimus tempora illum a quis ipsam perspiciatis voluptatem facere autem
                 perferendis sunt doloribus dignissimos blanditiis minus ad aliquam, harum totam eaque placeat fuga
                 explicabo ratione officiis amet consequatur? Voluptatibus.</p>
+
+            <!-- botones de redes sociales -->
             <div class="article__buttons row text-sm-center text-md-start">
                 <div class="col-4 col-lg-1">
-                    <button type="button" class="btn-sm btn-secondary">Compartir</button>
+                    <button type="button" class="btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#compartir">Compartir</button>
+                </div>
+                <!-- modal compartir | ejemplo -->
+                <div class="modal fade" id="compartir" tabindex="-1" aria-labelledby="compartir"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal__container modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal__title modal-title" id="exampleModalLabel">Compartir el Artículo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal__body modal-body mx-auto">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="modal__icon modal__icon--facebook fab fa-facebook fa-4x mx-2"></i></a>
+                                <a href="https://www.linkedin.com" target="_blank"><i class="modal__icon modal__icon--linkedin fab fa-linkedin fa-4x mx-2"></i></a>
+                            </div>
+                            <div class="modal__footer modal-footer">
+                                <button type="button" class="button__close btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-8 col-lg-4 pb-5">
                     <a href="https://twitter.com/intent/tweet" target="_blank" type="button"
@@ -119,12 +145,13 @@
                     <img class="section__img section__img--resize img-thumbnail" src="assets/img/naomi-thai.png" alt="">
                 </div>
                 <div class="col-sm-12 col-lg-2 my-auto">
-                    <h2 class="section__name text-lg-start">Naomi Thai</h2>
-                    <h4 class="section__user text-lg-start"><a class="section__links" href="https://www.instagram.com/"
-                            target="_blank">@Naothai</a></h4>
-                    <h4 class="section__link text-lg-start"><a class="section__links" href="https://www.depelos.com/"
-                            target="_blank">depelos.com</a></h4>
+                    <h2 class="section__author text-lg-start">Naomi Thai</h2>
+                    <h4 class="section__author section__author--pink text-lg-start"><a class="section__link"
+                            href="https://www.instagram.com/" target="_blank">@Naothai</a></h4>
+                    <h4 class="section__author section__author--pink text-lg-start"><a class="section__link"
+                            href="https://www.depelos.com/" target="_blank">depelos.com</a></h4>
                 </div>
+                <!-- texto desaparece en dispositivos pequeños -->
                 <div class="section__summary d-none d-md-block col-lg-8 my-auto">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni numquam, maiores
                         maxime error quas odit labore exercitationem optio explicabo omnis recusandae, saepe dolore in

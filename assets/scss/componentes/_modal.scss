@@ -1,0 +1,14 @@
+.modal {
+    .modal__icon {
+        color: $nickel;
+        transition: 300ms ease-in-out;
+        &.modal__icon--facebook:hover {
+            color: $primary;
+            transform: scale(1.5);
+        }
+        &.modal__icon--linkedin:hover {
+            color: $primary;
+            transform: scale(1.5);
+        }
+    }
+}
