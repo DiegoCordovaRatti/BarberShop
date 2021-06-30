@@ -1,29 +1,51 @@
-.header{
-    background-image: url("../img/post-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    .header__container{
-        @include flex-container;
-        .header__title{
-            font-size: $xx-large;
-            color: $platinum;
-            font-style: italic;
-            font-weight: $black-weight;
-            text-align: center;
-        }
-        .header__scroll{
-            color: $platinum; 
-            animation: MoveUpDown 1s linear infinite;
-            position: absolute; 
-        }
-        @keyframes MoveUpDown {
-            0%, 100% {
-              bottom: 0;
-            }
-            50% {
-              bottom: 5px;
-            }
-          }
+.header {
+  background-image: url("../img/post-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .header__container {
+    @include flex-container;
+
+    .header__title {
+      color: $white;
+      font-style: italic;
+      font-weight: $black-weight;
+      text-align: center;
     }
+
+    .header__scroll {
+      color: $platinum;
+      animation: MoveUpDown 1s linear infinite;
+      position: absolute;
+    }
+
+    @keyframes MoveUpDown {
+
+      0%,
+      100% {
+        bottom: 0;
+      }
+
+      50% {
+        bottom: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .header__title.header__title--resize {
+    font-size: $xx-large;
+  }
+}
+@media screen and (max-width: 600px){
+  .header{
+    background-position-x: -300px;
+  }
+  .header__title.header__title--resize{
+    font-size: 40px;
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
 }

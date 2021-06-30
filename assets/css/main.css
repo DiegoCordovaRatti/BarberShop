@@ -10790,8 +10790,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   height: 100%;
 }
 .header .header__container .header__title {
-  font-size: 70px;
-  color: #e6e7e7;
+  color: #fff;
   font-style: italic;
   font-weight: 900;
   text-align: center;
@@ -10810,6 +10809,22 @@ h1, .h1, h2, .h2, h3, .h3 {
   }
 }
 
+@media screen and (min-width: 601px) {
+  .header__title.header__title--resize {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    background-position-x: -300px;
+  }
+
+  .header__title.header__title--resize {
+    font-size: 40px;
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
+}
 .article {
   margin: 0 8vw;
 }
@@ -10828,6 +10843,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   padding: 10px 10px;
   background-color: #6c6e70;
   transition: 500ms ease;
+  text-decoration: none;
 }
 .article .article__container .btn-sm:hover, .article .article__container .btn-group-sm > .btn:hover {
   background-color: #222323;
