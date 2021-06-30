@@ -10,6 +10,11 @@
             margin: 40px 0;
             font-size: $medium;
         }
-    }
-    
+        .btn-sm{
+            border: solid $raisin-black thin;
+            border-radius: 20px;
+            padding: 10px 10px;
+            background-color: $nickel;
+        }
+    } 
 }

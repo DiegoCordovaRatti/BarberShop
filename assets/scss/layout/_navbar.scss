@@ -1,7 +1,10 @@
-.navbar{
+.navbar {
     background-color: $eerie-black;
     padding: 10px 5%;
-    .navbar__logo{
-        width: 100px;
+
+    .navbar__container {
+        .navbar__logo {
+            width: 100px;
+        }
     }
 }

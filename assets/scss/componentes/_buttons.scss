@@ -1,26 +1,21 @@
-// .button{
-//     padding: 0.7rem 2rem;
-//     border-radius: 3px;
-//     font-family: $open-sans;
-//     font-size: $small;
-//     color:$white;
-// }
+.pagination{
+    .pagination__container{
+        .btn{
+            border: solid $light-gray thin;
+            background-color: white;
+            transition: 500ms ease;
+            &:hover{
+                background-color: $eerie-black;
+            }
+        }
+        .btn.btn--left{
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .btn.btn--right{
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
 
-// .button_default{
-//    color: $carmine-pink;
-//    border: $carmine-pink;
-//    &:hover{
-//        background-color: $salmon;
-//        border-color:$salmon;
-//        color: $black-olive;
-//    }
-// }
-
-// .button_positive {
-//     background-color: $verdigris;
-//     border-color: $verdigris;
-//     &:hover {
-//     background-color: $medium-aquamarine;
-//     border-color: $medium-aquamarine;
-//     }
-// }
+    }

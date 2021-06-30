@@ -12,5 +12,18 @@
             font-weight: $black-weight;
             text-align: center;
         }
+        .header__scroll{
+            color: $platinum; 
+            animation: MoveUpDown 1s linear infinite;
+            position: absolute; 
+        }
+        @keyframes MoveUpDown {
+            0%, 100% {
+              bottom: 0;
+            }
+            50% {
+              bottom: 5px;
+            }
+          }
     }
 }
