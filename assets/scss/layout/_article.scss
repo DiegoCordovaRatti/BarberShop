@@ -1,12 +1,12 @@
 .article{
-    
+    margin: 0 8vw;
     .article__container{
         .article__date{
             font-weight: $regular-weight;
             font-size: 25px ;
         }
         .article__paragraph{
-            line-height: 40px;
+            line-height: 45px;
             margin: 40px 0;
             font-size: $medium;
         }
@@ -15,6 +15,10 @@
             border-radius: 20px;
             padding: 10px 10px;
             background-color: $nickel;
+            transition: 500ms ease;
+            &:hover{
+                background-color: $raisin-black;
+            }
         }
     } 
 }

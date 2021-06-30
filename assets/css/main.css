@@ -4179,7 +4179,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.55);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #ecbcba;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -10810,12 +10810,15 @@ h1, .h1, h2, .h2, h3, .h3 {
   }
 }
 
+.article {
+  margin: 0 8vw;
+}
 .article .article__container .article__date {
   font-weight: 400;
   font-size: 25px;
 }
 .article .article__container .article__paragraph {
-  line-height: 40px;
+  line-height: 45px;
   margin: 40px 0;
   font-size: 16px;
 }
@@ -10824,6 +10827,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   border-radius: 20px;
   padding: 10px 10px;
   background-color: #6c6e70;
+  transition: 500ms ease;
+}
+.article .article__container .btn-sm:hover, .article .article__container .btn-group-sm > .btn:hover {
+  background-color: #222323;
 }
 
 .section .section__container .section__name {
@@ -10838,6 +10845,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-size: 18px;
   color: #ecbcba;
   text-align: center;
+}
+.section .section__container .section__links {
+  text-decoration: none;
+  color: inherit;
 }
 .section .section__container .section__summary {
   font-weight: 300;

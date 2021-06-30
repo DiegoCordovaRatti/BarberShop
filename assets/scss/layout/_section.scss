@@ -14,6 +14,10 @@
             color: $spanish-pink;
             text-align: center;
         }
+        .section__links{
+            text-decoration: none;
+            color: inherit;
+        }
         .section__summary{
             font-weight: $light-weight;
             font-size: $small;
